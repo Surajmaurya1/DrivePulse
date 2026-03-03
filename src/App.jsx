@@ -4,30 +4,34 @@ import { Aperture, ShoppingCart, ArrowRight } from 'lucide-react';
 function App() {
   return (
     <div className="relative w-full overflow-hidden bg-[#010101] flex flex-col items-center">
-      {/* Decorative Text */}
-      <h1 
-        className="absolute top-[15%] left-1/2 -translate-x-1/2 w-[75%] max-w-[1073px] z-0 font-bebas font-bold uppercase text-center leading-none pointer-events-none"
-        style={{ 
-          fontSize: 'clamp(80px, 18vw, 250px)',
-          background: 'linear-gradient(180deg, rgba(255, 255, 255, 0.83) 0%, rgba(255, 255, 255, 0.12) 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          color: 'transparent'
-        }}
-      >
-        NEW ERA
-      </h1>
-
       {/* Hero Section Container */}
-      <section className="relative w-full min-h-[600px] max-h-[965px] h-[100vh] flex flex-col">
-        {/* Background Video */}
+      <section className="relative w-full min-h-[600px] max-h-[965px] h-[100vh] flex flex-col bg-[#010101]">
+        
+        {/* Decorative Text (Bottom Layer) */}
+        {/* <div className="absolute top-[15%] left-1/2 -translate-x-1/2 w-[75%] max-w-[1073px] z-0 pointer-events-none flex justify-center">
+          <h1 
+            className="font-bebas font-bold uppercase w-full text-center leading-none"
+            style={{ 
+              fontSize: 'clamp(80px, 18vw, 250px)',
+              background: 'linear-gradient(180deg, rgba(255, 255, 255, 0.83) 0%, rgba(255, 255, 255, 0.12) 100%)',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              backgroundClip: 'text',
+              color: 'transparent'
+            }}
+          >
+            NEW ERA
+          </h1>
+        </div> */}
+
+        {/* Base Background Video with blend mode to drop black */}
         <video
           autoPlay
           loop
           muted
           playsInline
           className="absolute inset-0 w-full h-full object-cover z-10 pointer-events-none"
+          style={{ mixBlendMode: 'screen' }}
         >
           <source src="/background.mp4" type="video/mp4" />
         </video>
