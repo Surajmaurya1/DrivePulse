@@ -38,9 +38,3 @@ This project features a full-screen, responsive hero section designed for a car 
    npm run build
    ```
 
-## Development Notes
-
-- Main components and structure are located in src/App.jsx.
-- Global styles and font imports are in src/index.css.
-- The project uses Google Fonts: Inter and Bebas Neue.
-- Color theme: Dark background (#010101), Light gray text (#EEEFF2), Dark text for buttons (#272835).
